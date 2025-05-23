@@ -1,5 +1,4 @@
 import { parser, eng } from "@gordonb/spandrel";
-import { state, setState, StatefulElement } from "./framework.ts";
 
 const grammar = {
   start: [
@@ -112,6 +111,8 @@ const main = () => {
     timeEl.textContent = new Date().toLocaleString();
 
     hateEl.innerHTML = "";
+
+    await sleep(500);
 
     for await (const word of AiTextGenerationSimulator(hate)) {
       const token = document.createElement("span");

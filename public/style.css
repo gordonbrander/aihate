@@ -23,8 +23,7 @@ h1 {
 
 .canvas {
     width: 100vw;
-    height: 100vh;
-    height: -webkit-fill-available;
+    height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
